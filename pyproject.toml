@@ -1,0 +1,30 @@
+[project]
+name = "mecha-trace"
+version = "0.1.0"
+description = "A feature attributed report review SDK and viewer: every sentence in a Mecha draft links to a named SAE feature, a saliency overlay on the i"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    { name = "Tarun Aditya Kusupati" }
+]
+dependencies = []
+
+[project.scripts]
+mecha-trace = "mecha_trace.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.0",
+    "ruff>=0.15.0",
+]
+
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

@@ -1,0 +1,2 @@
+[console_scripts]
+mecha-trace = mecha_trace.cli:main

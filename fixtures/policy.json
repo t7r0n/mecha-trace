@@ -1,0 +1,18 @@
+{
+  "company": "Mecha Health",
+  "repo": "mecha-trace",
+  "metrics": [
+    "mecha_coverage",
+    "state_risk",
+    "model_precision",
+    "interpretable_latency"
+  ],
+  "failure_modes": [
+    "mecha_drift",
+    "state_gap",
+    "model_misroute",
+    "interpretable_blindspot"
+  ],
+  "minimum_cases": 144,
+  "requires_evidence_markers": true
+}
