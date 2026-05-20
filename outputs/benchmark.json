@@ -1,5 +1,5 @@
 {
-  "cases_per_cluster": 24.0,
-  "mean_cluster_score": 0.3989,
-  "risk_spread": 0.2422
+  "cases_per_cluster": 36.0,
+  "mean_cluster_score": 0.3952,
+  "risk_spread": 0.0278
 }
