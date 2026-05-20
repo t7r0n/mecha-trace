@@ -5,7 +5,7 @@
   "package": "mecha_trace",
   "cli": "mecha-trace",
   "title": "Mecha Trace",
-  "problem": "Mecha has a state of the art model and 17,000 interpretable features (interpretability blog), but the AmeriRad rollout will not be gated on CheXbert F1 - it will be gated on PACS/DICOM ingestion at line rate and HL7 report write back without surprises, which is the load bearing operational layer they have not yet publicly shown. More importantly: when a radiologist disagrees with a draft, today's pipeline gives them a paragraph to edit.",
+  "problem": "Mecha has a state of the art model and 17,000 interpretable features (interpretability blog), but the AmeriRad rollout will not be gated on CheXbert F1 \u2014 it will be gated on PACS/DICOM ingestion at line rate and HL7 report write back without surprises, which is the load bearing operational layer they have not yet publicly shown. More importantly: when a radiologist disagrees with a draft, today's pipeline gives them a paragraph to edit.",
   "direction": "A feature attributed report review SDK and viewer: every sentence in a Mecha draft links to a named SAE feature, a saliency overlay on the image, and a one click accept/reject that re renders the report and writes an audit row to a verifiable log.",
   "why": "The judgment is choosing the interpretability surface, not a new training run. Mecha's competitive moat is already the model; what they don't yet have is the clinician facing artifact that turns interpretability into a regulatory and adoption advantage.",
   "terms": [
