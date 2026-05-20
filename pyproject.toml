@@ -1,7 +1,7 @@
 [project]
-name = "mecha-trace"
+name = "clinical-timeline-trace"
 version = "0.1.0"
-description = "A feature attributed report review SDK and viewer: every sentence in a Mecha draft links to a named SAE feature, a saliency overlay on the i"
+description = "A feature attributed report review SDK and viewer: every sentence in a Mecha draft links to a named SAE feature, a salie"
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [
@@ -10,7 +10,7 @@ authors = [
 dependencies = []
 
 [project.scripts]
-mecha-trace = "mecha_trace.cli:main"
+clinical-timeline-trace = "clinical_timeline_trace.cli:main"
 
 [dependency-groups]
 dev = [

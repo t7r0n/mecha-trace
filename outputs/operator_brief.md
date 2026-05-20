@@ -1,13 +1,13 @@
-# Operator Brief: Mecha Health
+# Operator Brief: Clinical Timeline Trace
 
-Mecha Health gets a local, deterministic pressure test around mecha, state, and model. The useful part is the repeatable evidence path from fixture to failure to operator action.
+This local harness runs a deterministic pressure test around evidence, workflow, and review. The useful part is the repeatable evidence path from fixture to failure to operator action.
 
 ## Highest-leverage checks
 
-- mecha evidence replay -> block release until cited evidence is regenerated (mecha_coverage, evidence ev_0088).
-- interpretable operator packet -> accept only if decision claims cite fixture evidence (state_risk, evidence ev_0011).
-- model regression harness -> open a regression issue with trace and benchmark delta (model_precision, evidence ev_0110).
-- state boundary probe -> route to reviewer with evidence packet (interpretable_latency, evidence ev_0033).
+- evidence replay -> block release until cited evidence is regenerated (evidence_coverage, evidence ev_0000).
+- review operator packet -> accept only if decision claims cite fixture evidence (handoff_risk, evidence ev_0011).
+- claim regression harness -> open a regression issue with trace and benchmark delta (claim_precision, evidence ev_0022).
+- handoff boundary probe -> route to reviewer with evidence packet (review_latency, evidence ev_0077).
 
 ## What makes this useful
 

@@ -1,77 +1,61 @@
 {
-  "company": "Mecha Health",
-  "company_slug": "mecha-health",
-  "repo": "mecha-trace",
-  "package": "mecha_trace",
-  "cli": "mecha-trace",
-  "title": "Mecha Trace",
-  "problem": "Mecha has a state of the art model and 17,000 interpretable features (interpretability blog), but the AmeriRad rollout will not be gated on CheXbert F1 \u2014 it will be gated on PACS/DICOM ingestion at line rate and HL7 report write back without surprises, which is the load bearing operational layer they have not yet publicly shown. More importantly: when a radiologist disagrees with a draft, today's pipeline gives them a paragraph to edit.",
+  "company": "Clinical Timeline Trace",
+  "company_slug": "clinical-timeline-trace",
+  "repo": "clinical-timeline-trace",
+  "package": "clinical_timeline_trace",
+  "cli": "clinical-timeline-trace",
+  "title": "Clinical Timeline Trace",
+  "problem": "Mecha has a state of the art model and 17,000 interpretable features (interpretability blog), but the AmeriRad rollout will not be gated on CheXbert F1 - it will be gated on PACS/DICOM ingestion at line rate and HL7 report write back without surprises, which is the load bearing operational layer they have not yet publicly shown. More importantly: when a radiologist disagrees with a draft, today's pipeline gives them a paragraph to edit.",
   "direction": "A feature attributed report review SDK and viewer: every sentence in a Mecha draft links to a named SAE feature, a saliency overlay on the image, and a one click accept/reject that re renders the report and writes an audit row to a verifiable log.",
-  "why": "The judgment is choosing the interpretability surface, not a new training run. Mecha's competitive moat is already the model; what they don't yet have is the clinician facing artifact that turns interpretability into a regulatory and adoption advantage.",
+  "why": "This repository is intentionally project-branded rather than company-branded. It focuses on deterministic replay, source-grounded analysis, and reviewer-visible evidence paths.",
   "terms": [
-    "mecha",
-    "state",
-    "model",
-    "interpretable",
-    "features",
-    "interpretability",
-    "amerirad",
-    "rollout",
-    "gated",
-    "chexbert",
-    "dicom",
-    "ingestion",
-    "report",
-    "write",
-    "surprises",
-    "which",
-    "bearing",
-    "operational"
+    "evidence",
+    "workflow",
+    "review",
+    "claims",
+    "fixtures",
+    "replay",
+    "handoff",
+    "trace",
+    "policy",
+    "decision",
+    "coverage",
+    "latency"
   ],
   "metrics": [
-    "mecha_coverage",
-    "state_risk",
-    "model_precision",
-    "interpretable_latency"
+    "evidence_coverage",
+    "handoff_risk",
+    "claim_precision",
+    "review_latency"
   ],
   "failure_modes": [
-    "mecha_drift",
-    "state_gap",
-    "model_misroute",
-    "interpretable_blindspot"
+    "evidence_drift",
+    "handoff_gap",
+    "claim_misroute",
+    "review_blindspot"
   ],
   "archetypes": [
     {
-      "name": "mecha evidence replay",
-      "trigger": "mecha signal changes while state context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "state boundary probe",
-      "trigger": "state handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "model regression harness",
-      "trigger": "model behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "interpretable operator packet",
-      "trigger": "interpretable output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources": [
-    "https://www.ycombinator.com/launches/MeX-mecha-health-trustworthy-medical-image-reporting-using-ai",
-    "https://www.mecha-health.ai/blog/Mecha-net-v0.1",
-    "https://www.mecha-health.ai/blog/Interpreting-a-radiological-foundation-model",
-    "https://www.mecha-health.ai/about-us",
-    "https://radiologybusiness.com/press-release/mecha-health-raises-41m-seed-round-build-next-generation-foundation-models-radiology",
-    "https://americanradiologysolutions.com/blog/amerirad-partners-with-mecha-health/",
-    "https://arxiv.org/abs/2410.03334",
-    "https://ucl-pond.github.io/author/ahmed-abdulaal-abdulaal/",
-    "https://www.menlotimes.com/post/mecha-health-raises-4-1-million-seed-round-to-build-next-generation-foundation-models-for-radiology"
-  ],
-  "github_url": "https://github.com/t7r0n/mecha-trace"
+  "sources": [],
+  "github_url": "https://github.com/t7r0n/clinical-timeline-trace"
 }

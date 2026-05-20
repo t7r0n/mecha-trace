@@ -1,67 +1,57 @@
 {
-  "repo": "mecha-trace",
-  "company": "Mecha Health",
+  "repo": "clinical-timeline-trace",
+  "company": "Clinical Timeline Trace",
   "rubric_axes": [
     {
-      "axis": "mecha_coverage",
+      "axis": "evidence_coverage",
       "failures": [
-        "mecha_drift"
+        "evidence_drift"
       ],
       "evidence_required": true
     },
     {
-      "axis": "state_risk",
+      "axis": "handoff_risk",
       "failures": [
-        "state_gap"
+        "handoff_gap"
       ],
       "evidence_required": true
     },
     {
-      "axis": "model_precision",
+      "axis": "claim_precision",
       "failures": [
-        "model_misroute"
+        "claim_misroute"
       ],
       "evidence_required": true
     },
     {
-      "axis": "interpretable_latency",
+      "axis": "review_latency",
       "failures": [
-        "interpretable_blindspot"
+        "review_blindspot"
       ],
       "evidence_required": true
     }
   ],
   "archetypes": [
     {
-      "name": "mecha evidence replay",
-      "trigger": "mecha signal changes while state context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "state boundary probe",
-      "trigger": "state handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "model regression harness",
-      "trigger": "model behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "interpretable operator packet",
-      "trigger": "interpretable output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources_used": [
-    "https://www.ycombinator.com/launches/MeX-mecha-health-trustworthy-medical-image-reporting-using-ai",
-    "https://www.mecha-health.ai/blog/Mecha-net-v0.1",
-    "https://www.mecha-health.ai/blog/Interpreting-a-radiological-foundation-model",
-    "https://www.mecha-health.ai/about-us",
-    "https://radiologybusiness.com/press-release/mecha-health-raises-41m-seed-round-build-next-generation-foundation-models-radiology",
-    "https://americanradiologysolutions.com/blog/amerirad-partners-with-mecha-health/",
-    "https://arxiv.org/abs/2410.03334",
-    "https://ucl-pond.github.io/author/ahmed-abdulaal-abdulaal/",
-    "https://www.menlotimes.com/post/mecha-health-raises-4-1-million-seed-round-to-build-next-generation-foundation-models-for-radiology"
-  ]
+  "sources_used": []
 }

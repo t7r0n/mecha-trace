@@ -1,8 +1,8 @@
-# Mecha Trace
+# Clinical Timeline Trace
 
 A feature attributed report review SDK and viewer: every sentence in a Mecha draft links to a named SAE feature, a saliency overlay on the image, and a one click accept/reject that re renders the report and writes an audit row to a verifiable log.
 
-![Mecha Trace working dashboard](outputs/project_working.svg)
+![Clinical Timeline Trace working dashboard](outputs/project_working.svg)
 
 ## Why it exists
 
@@ -13,12 +13,12 @@ The project is intentionally built as a local replay harness instead of a slide.
 ## What is inside
 
 - Deterministic fixture generation for the company-specific risk surface.
-- Strategy code in `src/mecha_trace/strategy.py` with project-specific scoring and visual evidence.
+- Strategy code in `src/clinical_timeline_trace/strategy.py` with project-specific scoring and visual evidence.
 - Citation-locked reports where every decision claim points to a generated evidence ID.
 - Two regenerated visual artifacts: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
 - A portable demo pack with JSON, CSV, Markdown, HTML, SVG, benchmark, and test artifacts.
 
-![Mecha Trace evidence map](outputs/evidence_map.svg)
+![Clinical Timeline Trace evidence map](outputs/evidence_map.svg)
 
 ## Signals it measures
 
@@ -38,7 +38,7 @@ The project is intentionally built as a local replay harness instead of a slide.
 
 ```bash
 uv sync
-uv run mecha-trace all
+uv run clinical-timeline-trace all
 uv run pytest -q
 uv run ruff check .
 ```
@@ -52,18 +52,6 @@ uv run ruff check .
 - `outputs/decision_report.md`
 - `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
-
-## Sources
-
-- https://www.ycombinator.com/launches/MeX-mecha-health-trustworthy-medical-image-reporting-using-ai
-- https://www.mecha-health.ai/blog/Mecha-net-v0.1
-- https://www.mecha-health.ai/blog/Interpreting-a-radiological-foundation-model
-- https://www.mecha-health.ai/about-us
-- https://radiologybusiness.com/press-release/mecha-health-raises-41m-seed-round-build-next-generation-foundation-models-radiology
-- https://americanradiologysolutions.com/blog/amerirad-partners-with-mecha-health/
-- https://arxiv.org/abs/2410.03334
-- https://ucl-pond.github.io/author/ahmed-abdulaal-abdulaal/
-- https://www.menlotimes.com/post/mecha-health-raises-4-1-million-seed-round-to-build-next-generation-foundation-models-for-radiology
 
 ## Boundary
 
