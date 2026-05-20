@@ -1,6 +1,6 @@
 # Operator Brief: Mecha Health
 
-Mecha Health gets a local, deterministic pressure test around mecha, state, and model. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action.
+Mecha Health gets a local, deterministic pressure test around mecha, state, and model. The useful part is the repeatable evidence path from fixture to failure to operator action.
 
 ## Highest-leverage checks
 

@@ -1,11 +1,11 @@
 {
   "layers": [
     {
-      "name": "synthetic_fixture_replay",
+      "name": "fixture_replay",
       "purpose": "exercise mecha and state cases"
     },
     {
-      "name": "domain_strategy",
+      "name": "strategy_model",
       "purpose": "score mecha_coverage and state_risk"
     },
     {
